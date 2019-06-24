@@ -3,7 +3,7 @@ include "../db/database.php";
 
 function db_connexion(){
    try {
-        $base = new PDO('mysql:host=localhost; dbname=myvoitures','wordpress','po#34papo');
+        $base = new PDO('mysql:host=localhost; dbname=myvoitures','id','password');
     }
     catch(exception $e) {
         die('Erreur '.$e->getMessage());
